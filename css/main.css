@@ -1,0 +1,74 @@
+h5 {
+	font-family: 'Roboto', serif;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+p {
+	font-family: 'Lato', serif;
+	font-weight: normal;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+body {
+	height: 100%;
+	background: url(../images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a {
+	width: auto;
+}
+
+.fill-vertical {
+	min-height: 100vh;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.buttons {
+	width: 140px;
+	height: auto;
+	max-width: 60%; 	
+	margin-top: 3vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+.button1 {
+	background-color: #e0e0e0; 
+    color: black; 
+    border: 2px solid black;
+}
+
+.button1:hover {
+	background-color: #bdbdbd;
+    color: white;
+}
+
+#banner {
+	padding-left: 15px;
+	overflow: hidden;
+}
+
+#self-img {
+	width: 200px;
+	height: auto;
+	max-width: 70%; 	
+	margin-top: 4vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
