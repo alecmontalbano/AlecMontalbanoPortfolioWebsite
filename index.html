@@ -1,46 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<!--Import Lato font from Google fonts API-->
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bebas">
-	<!--Import Google Icon Font-->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-	<!--Import jQuery then import materialize.js-->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-	<!--Reference local stylesheet-->
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta charset="UTF-8">
+  <title>Alec Montalbano</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/prefixfree.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-	<div class="row fill-vertical">
-		<div id="banner" class="col l3 m5 s12 z-depth-5 fill-vertical grey lighten-5">
-			<a href="index.html"><img id="self-img" class="circle" src="images/Alec.jpg"></a>
-			
-			<h5>Alec Montalbano</h5>
 
-			<br/>
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+       <!--<a class="navbar-brand" href="#featured"><h1><span class="head">ALEC</span><span class="subhead">MONTALBANO</span></h1></a>-->
+      </div><!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav">
+          <!--<li class="active"><a href="#featured">Home</a></li>-->
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>        
+      </div><!-- collapse navbar-collapse -->
+    </div><!-- container -->
+  </nav>
 
-			<a href="about.html" class="buttons button1 waves-effect waves-white btn-flat">ABOUT</a>
-			
-			<a href="portfolio.html" class="buttons button1 waves-effect waves-white btn-flat">PORTFOLIO</a>
-			
-			<a href="resume.html" class="buttons button1 waves-effect waves-white btn-flat">RESUME</a>
-			
-			<a href="contact.html" class="buttons button1 waves-effect waves-white btn-flat">CONTACT</a>
-			
-			<br/>
-			<br/>
+  <div class="carousel fade" data-ride="carousel" id="featured">
 
-			<p>Phone Number :</p>
-			<p><font color="#9e9e9e">352-519-6072</font></p>
+    <ol class="carousel-indicators">
+    </ol>
 
-			<p>E-mail :</p>
-			<p><font color="#9e9e9e">alec.montalbano@gmail.com</font></p>
-		<div/>
-	</div>
+    <div class="carousel-inner fullheight">
+      <div class="item"><img src="images/FRC_Poster_Final_A.png" alt="FRC Poster"></div>
+      <div class="item"><img src="images/AJM.png" alt="Album Cover"></div>
+      <div class="item"><img src="images/AJM_Matte.png" alt="Al-jee"></div>      
+    </div><!-- carousel-inner -->
+
+    <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div><!-- featured carousel -->
+</header>
+
+<div class="main">
+  <div class="page" id="about">
+    <div class="content container">
+      <h2>About Me</h2>      
+      <div class="row">
+        <p class="col-md-5 col-md-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices leo mauris, id lacinia diam pellentesque quis. Vivamus dapibus malesuada dignissim. Nunc venenatis, magna sit amet ultricies interdum, purus ex pharetra tellus, eu malesuada tellus justo in tortor. Morbi tempus est nibh, vel dapibus ligula maximus non. Aenean nisl et feugiat laoreet.</p>
+        <p class="col-md-5">In in dolor a lectus egestas dapibus sit amet a mi. In risus lorem, rhoncus vel ligula sed, malesuada vehicula purus. Cras aliquam volutpat lorem et condimentum. Pellentesque consectetur vitae justo in pellentesque. Donec lacinia dui magna, eu consequat arcu sollicitudin eget.</p>
+      </div><!-- row -->
+    </div><!-- content container -->
+  </div><!-- about page -->
+
+  <div class="page" id="portfolio">
+    <div class="fluid container">
+      <h2>Portfolio</h2>
+      <div class="row">
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>Pico</h3>
+        </a>
+        
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>Kayoh</h3>
+        </a>
+
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>Digital Planetarium</h3>
+        </a> 
+
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>Plastic AR</h3>
+        </a>
+
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>Fertile Plains</h3>
+        </a>
+        
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>How Can I Cry With No Eyes?</h3>
+        </a>
+
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>Aller Divine</h3>
+        </a> 
+
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>Spirit Lamp</h3>
+        </a>
+
+         <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/PLASTIC_AR.png" alt="Icon">
+            <h3>[ISM]</h3>
+        </a> 
+
+        <!--<a href="frc.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="FRC_Poster_Final_A.png" alt="Icon">
+            <h3>Facing The Refugee Crisis</h3>
+        </a>-->
+        
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/AJM.png" alt="Icon">
+            <h3>AJM</h3>
+        </a>
+
+        <a href="portfoliosubpage.html" class="portfolio col-md-4 col-sm-4 col-xs-12">
+          <img class="icon" src="images/AJM_Matte.png" alt="Icon">
+            <h3>Al-Jee</h3>
+        </a> 
+      </div><!-- row -->   
+    </div><!-- fluid container -->
+  </div><!-- portfolio page -->
+
+  <div class="page" id="resume">
+    <div class="content container">
+      <h2>Resume</h2>      
+      <div class="row">
+        <p class="col-md-12">Suspendisse vitae enim vel sem euismod pharetra in sed enim. Donec faucibus, eros vel ultricies ornare, enim tellus semper ex, in commodo ex arcu id nunc. Nunc eu pharetra nisl, eu malesuada lacus. Ut sed tortor et sem scelerisque cursus. Fusce eget ex feugiat, venenatis leo in, malesuada mi.Ut blandit quam sit amet urna sollicitudin malesuada. Mauris varius dolor non nisi fringilla hendrerit. Nam non mi magna. Nam tincidunt velit id orci viverra, eget lacinia lacus pulvinar. Quisque faucibus dictum odio eu elementum. Donec laoreet, nunc in posuere rhoncus, ante ipsum maximus lectus, fermentum placerat velit libero ut felis. Duis eu nulla cursus diam ultrices efficitur vitae et velit. Vestibulum tristique enim ligula, at efficitur diam euismod vel. Quisque tortor urna, tristique in mollis aliquam, auctor non quam.Mauris volutpat diam et tincidunt sollicitudin. Pellentesque eget nisl viverra, dictum ex sit amet, aliquet dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed nunc nulla. Curabitur mollis libero eget imperdiet mollis. Quisque porta nibh ut eleifend sagittis. Donec nisi nulla, iaculis sed luctus id, consectetur eget orci. Sed in enim auctor, pharetra nisi et, suscipit felis. Phasellus sagittis felis a neque posuere, id euismod justo semper. Fusce semper efficitur bibendum. Sed eu sapien odio. Morbi ullamcorper efficitur lectus vel aliquet. Curabitur et ligula bibendum, tempor mi vitae, condimentum dui.</p>
+      </div><!-- row -->
+    </div><!-- content container -->
+  </div><!-- resume page -->
+</div><!-- main -->
+
+<footer>
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <p>Phone:<span class="phone">352-519-6072</span></p>
+        <p>E-mail:<span class="email">amontalbano@ufl.edu</span></p>   
+      </div><!-- col-sm-6 -->
+    </div><!-- row -->
+  </div><!-- content container -->
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>
 </body>
 </html>
